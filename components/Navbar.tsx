@@ -1,0 +1,65 @@
+
+import React, { useState, useEffect } from 'react';
+import { ViewState } from '../types';
+import { Search } from 'lucide-react';
+
+interface NavbarProps {
+  currentView: ViewState;
+  onNavigate: (view: ViewState) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-black/80 backdrop-blur-md py-4' : 'bg-transparent py-8'}`}>
+      <div className="max-w-[1400px] mx-auto flex justify-between items-center px-10">
+        <div 
+          className="flex items-center cursor-pointer group"
+          onClick={() => onNavigate('landing')}
+        >
+          <div className="flex flex-col leading-none">
+            <span className="font-syncopate text-3xl font-bold tracking-tighter text-white group-hover:text-[#FFC700] transition-colors duration-500">CORENAV</span>
+            <span className="text-[10px] font-black text-[#FFC700] uppercase tracking-[0.4em] mt-1 italic">SYSTEMS</span>
+          </div>
+        </div>
+
+        <div className="hidden md:flex space-x-12 items-center">
+          {(['landing', 'solutions', 'about', 'contact'] as ViewState[]).map((view) => (
+            <button
+              key={view}
+              onClick={() => onNavigate(view)}
+              className={`uppercase text-[12px] font-black tracking-[0.2em] transition-all duration-500 relative group py-2 ${
+                currentView === view ? 'text-[#FFC700]' : 'text-white/80 hover:text-white'
+              }`}
+            >
+              {view === 'landing' ? 'Home' : view}
+              <span className={`absolute -bottom-1 left-0 h-[3px] bg-[#FFC700] transition-all duration-300 ease-out ${currentView === view ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+            </button>
+          ))}
+          <button className="text-white/80 hover:text-[#FFC700] transition-colors p-2">
+            <Search className="w-5 h-5" />
+          </button>
+        </div>
+
+        <div className="flex items-center space-x-6">
+          <button 
+            className="bg-white text-black px-10 py-3.5 text-[11px] font-black uppercase tracking-[0.2em] hover:bg-[#FFC700] hover:text-black transition-all duration-500 rounded-sm font-grotesk shadow-xl shadow-black/20"
+          >
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

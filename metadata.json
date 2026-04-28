@@ -1,0 +1,8 @@
+{
+  "name": "CORENAV | Precision Autonomous Systems",
+  "description": "A high-performance landing page for CORENAV, an aerospace leader specializing in autonomous navigation, intelligence layers, and propulsion systems for the robotics age.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
