@@ -25,9 +25,8 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
           muted 
           playsInline
           className="w-full h-full object-cover"
-        >
-          <source src="/assets/hero/Hero.mp4" type="video/mp4" />
-        </video>
+          src="/assets/hero/Hero.mp4"
+        />
         <div className="absolute inset-0 bg-black/60" />
       </motion.div>
 
