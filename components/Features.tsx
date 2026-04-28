@@ -318,7 +318,7 @@ const DroneRunway: React.FC = () => {
         className="absolute top-1/2 -translate-y-1/2 z-20 pointer-events-none"
       >
         <img
-          src="/assets/products/scroll_drone.png"
+          src="/static-assets/products/scroll_drone.png"
           alt="drone"
           className="w-16 h-auto mix-blend-multiply drop-shadow-[0_4px_12px_rgba(0,0,0,0.25)]"
         />

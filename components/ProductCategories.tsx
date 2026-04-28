@@ -7,15 +7,15 @@ const categories = [
     title: "AERIAL SYSTEMS",
     subtitle: "UAV Platforms",
     color: "#FF5C00",
-    video: "/assets/products/Drone_Background.mp4",
+    video: "/static-assets/products/Drone_Background.mp4",
     description: "From precision agriculture to tactical defense. A complete ecosystem of autonomous flight.",
     series: "UAV SERIES",
     products: [
-      { name: "Agriculture Drone", desc: "Precision spraying & crop mapping for large-scale farmland operations.", image: "/assets/products/Cinematic_drone_shot_202604281209.jpeg" },
-      { name: "Delivery Drone", desc: "Last-mile payload transport with obstacle avoidance and GPS precision.", image: "/assets/products/Style__ultra-realistic_cinematic_202604281223.jpeg" },
+      { name: "Agriculture Drone", desc: "Precision spraying & crop mapping for large-scale farmland operations.", image: "/static-assets/products/Cinematic_drone_shot_202604281209.jpeg" },
+      { name: "Delivery Drone", desc: "Last-mile payload transport with obstacle avoidance and GPS precision.", image: "/static-assets/products/Style__ultra-realistic_cinematic_202604281223.jpeg" },
       { name: "Defence Drone", desc: "Tactical ISR and perimeter surveillance with encrypted telemetry.", image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=800" },
       { name: "Micro Drone (<250g)", desc: "Ultra-portable BVLOS intelligence platform for confined spaces.", image: "https://images.unsplash.com/photo-1512133595763-5ae5a127db0a?auto=format&fit=crop&q=80&w=800" },
-      { name: "Fire Fighting Drone", desc: "High-altitude thermal scanning and retardant deployment.", image: "/assets/products/Style__ultra-realistic_cinematic_202604281214.jpeg" }
+      { name: "Fire Fighting Drone", desc: "High-altitude thermal scanning and retardant deployment.", image: "/static-assets/products/Style__ultra-realistic_cinematic_202604281214.jpeg" }
     ]
   },
   {
@@ -23,12 +23,12 @@ const categories = [
     title: "GROUND ROBOTICS",
     subtitle: "Industrial Automation",
     color: "#00B4D8",
-    video: "/assets/products/Industry_bot.mp4",
+    video: "/static-assets/products/Industry_bot.mp4",
     description: "Heavy-duty robotics designed for seamless warehouse and factory integration.",
     series: "GR SERIES",
     products: [
-      { name: "Cargo Lifting Carts", desc: "Autonomous heavy payload transport with dynamic load balancing.", image: "/assets/products/Robot_cart_carrying_202604281709.jpeg" },
-      { name: "Packaging Machines", desc: "Intelligent end-of-line automation with vision-guided sorting.", image: "/assets/products/Robo_arm.jpeg" }
+      { name: "Cargo Lifting Carts", desc: "Autonomous heavy payload transport with dynamic load balancing.", image: "/static-assets/products/Robot_cart_carrying_202604281709.jpeg" },
+      { name: "Packaging Machines", desc: "Intelligent end-of-line automation with vision-guided sorting.", image: "/static-assets/products/Robo_arm.jpeg" }
     ]
   },
   {
@@ -36,12 +36,12 @@ const categories = [
     title: "AUTOBOTS",
     subtitle: "Smart Mobility",
     color: "#FF3366",
-    video: "/assets/products/Delhivery_bot.mp4",
+    video: "/static-assets/products/Delhivery_bot.mp4",
     description: "Navigating pedestrian environments and urban infrastructure safely.",
     series: "AB SERIES",
     products: [
-      { name: "Driverless Carts", desc: "Campus & facility human transit with 360° LiDAR perception.", image: "/assets/products/diverless_car.jpeg" },
-      { name: "Smart Delivery Bots", desc: "Urban sidewalk delivery with real-time path re-planning.", image: "/assets/products/remove_the_camera_202604281214.png" }
+      { name: "Driverless Carts", desc: "Campus & facility human transit with 360° LiDAR perception.", image: "/static-assets/products/diverless_car.jpeg" },
+      { name: "Smart Delivery Bots", desc: "Urban sidewalk delivery with real-time path re-planning.", image: "/static-assets/products/remove_the_camera_202604281214.png" }
     ]
   }
 ];
