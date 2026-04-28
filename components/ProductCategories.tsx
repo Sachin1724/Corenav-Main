@@ -27,8 +27,8 @@ const categories = [
     description: "Heavy-duty robotics designed for seamless warehouse and factory integration.",
     series: "GR SERIES",
     products: [
-      { name: "Cargo Lifting Carts", desc: "Autonomous heavy payload transport with dynamic load balancing.", image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800" },
-      { name: "Packaging Machines", desc: "Intelligent end-of-line automation with vision-guided sorting.", image: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=800" }
+      { name: "Cargo Lifting Carts", desc: "Autonomous heavy payload transport with dynamic load balancing.", image: "/assets/products/Robot_cart_carrying_202604281709.jpeg" },
+      { name: "Packaging Machines", desc: "Intelligent end-of-line automation with vision-guided sorting.", image: "/assets/products/Robo_arm.jpeg" }
     ]
   },
   {

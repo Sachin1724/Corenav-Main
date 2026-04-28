@@ -6,6 +6,7 @@ import Features from './components/Features';
 import ProductCategories from './components/ProductCategories';
 import ArchitectureMap from './components/ArchitectureMap';
 import CustomCursor from './components/CustomCursor';
+import About from './components/About';
 import { ViewState } from './types';
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin } from 'lucide-react';
@@ -115,16 +116,7 @@ const App: React.FC = () => {
           </section>
         )}
         {view === 'about' && (
-          <section className="py-24 px-6 max-w-4xl mx-auto text-center">
-             <h2 className="font-syncopate text-3xl font-bold mb-12">OUR MISSION</h2>
-             <p className="text-xl text-gray-400 mb-8 font-light italic">
-               "To build the intelligence layer that powers autonomous movement across machines."
-             </p>
-             <p className="text-gray-500 leading-relaxed max-w-2xl mx-auto">
-               CoreNav Private Limited is a deep-tech automation and navigation company focused on building intelligent systems that can navigate, operate, and make decisions autonomously across multiple platforms.
-             </p>
-
-          </section>
+          <About />
         )}
       </main>
 

@@ -26,9 +26,21 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
           className="flex items-center cursor-pointer group gap-4"
           onClick={() => onNavigate('landing')}
         >
+          {/* Logo Mark */}
+          <svg width="40" height="40" viewBox="0 0 100 100" className="group-hover:scale-105 transition-transform duration-500">
+            <path d="M 25 15 L 95 15 L 75 85 L 5 85 Z" fill="#FFC700" />
+            <text x="50" y="68" fontFamily="Arial, Helvetica, sans-serif" fontWeight="900" fontStyle="italic" fontSize="60" fill="#FFFFFF" textAnchor="middle">C</text>
+          </svg>
           <div className="flex flex-col leading-none">
             <span className="font-syncopate text-2xl font-bold tracking-tighter text-white group-hover:text-[#FFC700] transition-colors duration-500">CORENAV</span>
-            <span className="text-[10px] font-black text-[#FFC700] uppercase tracking-[0.4em] mt-1 italic">PRIVATE LIMITED</span>
+            <div className="flex items-center gap-2 mt-1">
+              <span className="text-[10px] font-black text-[#FFC700] uppercase tracking-[0.4em] italic">PVT LTD</span>
+              <div className="flex gap-[1.5px]">
+                <div className="w-[2px] h-[6px] bg-[#FF9933]" />
+                <div className="w-[2px] h-[6px] bg-[#FFFFFF]" />
+                <div className="w-[2px] h-[6px] bg-[#138808]" />
+              </div>
+            </div>
           </div>
         </div>
 
