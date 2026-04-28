@@ -23,14 +23,16 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-black/80 backdrop-blur-md py-4' : 'bg-transparent py-8'}`}>
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-10">
         <div 
-          className="flex items-center cursor-pointer group"
+          className="flex items-center cursor-pointer group gap-4"
           onClick={() => onNavigate('landing')}
         >
           <div className="flex flex-col leading-none">
-            <span className="font-syncopate text-3xl font-bold tracking-tighter text-white group-hover:text-[#FFC700] transition-colors duration-500">CORENAV</span>
-            <span className="text-[10px] font-black text-[#FFC700] uppercase tracking-[0.4em] mt-1 italic">SYSTEMS</span>
+            <span className="font-syncopate text-2xl font-bold tracking-tighter text-white group-hover:text-[#FFC700] transition-colors duration-500">CORENAV</span>
+            <span className="text-[10px] font-black text-[#FFC700] uppercase tracking-[0.4em] mt-1 italic">PRIVATE LIMITED</span>
           </div>
         </div>
+
+
 
         <div className="hidden md:flex space-x-12 items-center">
           {(['landing', 'solutions', 'about', 'contact'] as ViewState[]).map((view) => (
@@ -51,11 +53,13 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
         </div>
 
         <div className="flex items-center space-x-6">
-          <button 
-            className="bg-white text-black px-10 py-3.5 text-[11px] font-black uppercase tracking-[0.2em] hover:bg-[#FFC700] hover:text-black transition-all duration-500 rounded-sm font-grotesk shadow-xl shadow-black/20"
+          <a
+            href="mailto:info@corenav.com"
+            className="cta-button bg-white text-black px-10 py-3.5 text-[11px] font-black uppercase tracking-[0.2em] hover:bg-[#FFC700] hover:text-black transition-all duration-500 rounded-sm font-grotesk shadow-xl shadow-black/20"
+            data-cta="true"
           >
             Get In Touch
-          </button>
+          </a>
         </div>
       </div>
     </nav>
