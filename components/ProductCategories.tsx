@@ -164,7 +164,7 @@ const ProductCard = ({
           onMouseLeave={e => (e.currentTarget.style.color = `${color}cc`)}
         >
           <span className="text-base leading-none group-hover/link:translate-x-1 transition-transform">→</span>
-          <span>View Product</span>
+          <span>GET INFO</span>
         </a>
       </div>
 
